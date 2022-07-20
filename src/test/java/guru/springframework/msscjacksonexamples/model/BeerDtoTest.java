@@ -20,6 +20,7 @@ class BeerDtoTest extends BaseTest {
     void testSerializeDto() throws JsonProcessingException {
         BeerDto beerDto = getDto();
         String jsonString = mapper.writeValueAsString(beerDto);
+        System.out.println(jsonString);
         assertNotNull(jsonString);
     }
 

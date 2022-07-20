@@ -20,6 +20,7 @@ public class BeerDtoKekabTest extends BaseTest {
     void testKekab() throws JsonProcessingException {
         BeerDto dto = getDto();
         String s = mapper.writeValueAsString(dto);
+        System.out.println(s);
         assertThat(s).isNotEmpty();
     }
 }
